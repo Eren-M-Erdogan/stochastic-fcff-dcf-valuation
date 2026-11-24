@@ -21,7 +21,7 @@ An automated **5-year Discounted Cash Flow (FCFF)** and **Monte Carlo simulation
 ### 1. Free Cash Flow to the Firm (FCFF)
 For each projection year $t \in \{1, 2, 3, 4, 5\}$:
 
-$$\text{FCFF}_t = \text{EBIT}_t \times (1 - \tau) + \text{D\&A}_t - \text{CapEx}_t - \Delta \text{NWC}_t$$
+$$\text{FCFF}_t = \text{EBIT}_t \times (1 - \tau) + \text{DA}_t - \text{CapEx}_t - \Delta \text{NWC}_t$$
 
 - **Revenue Growth:** Anchored on historical growth and tapered toward long-term equilibrium over the 5-year horizon.
 - **Operating & Capital Items:** EBIT margin, Depreciation and Amortization ($\text{DA}$), Capital Expenditures ($\text{CapEx}$), and changes in Net Working Capital ($\Delta \text{NWC}$) are modeled using historical ratios/averages and sanity-checked against company disclosures.
