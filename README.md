@@ -24,7 +24,7 @@ For each projection year $t \in \{1, 2, 3, 4, 5\}$:
 $$\text{FCFF}_t = \text{EBIT}_t \times (1 - \tau) + \text{D\&A}_t - \text{CapEx}_t - \Delta \text{NWC}_t$$
 
 - **Revenue Growth:** Anchored on historical growth and tapered toward long-term equilibrium over the 5-year horizon.
-- **Operating & Capital Items:** EBIT margin, Depreciation & Amortization ($\text{D\&A}$), Capital Expenditures ($\text{CapEx}$), and changes in Net Working Capital ($\Delta \text{NWC}$) are modeled using historical ratios/averages and sanity-checked against company disclosures.
+- **Operating & Capital Items:** EBIT margin, Depreciation and Amortization ($\text{DA}$), Capital Expenditures ($\text{CapEx}$), and changes in Net Working Capital ($\Delta \text{NWC}$) are modeled using historical ratios/averages and sanity-checked against company disclosures.
 - **Effective Tax Rate ($\tau$):** Derived from historical tax expense over pretax income, bounded within a realistic range (e.g., 15%–35%) to prevent distortion from one-off items.
 
 ### 2. Weighted Average Cost of Capital (WACC)
@@ -42,7 +42,7 @@ $$\text{TV}_5 = \frac{\text{FCFF}_5 \times (1 + g)}{\text{WACC} - g}$$
 
 $$\text{Enterprise Value (EV)} = \sum_{t=1}^{5} \frac{\text{FCFF}_t}{(1 + \text{WACC})^t} + \frac{\text{TV}_5}{(1 + \text{WACC})^5}$$
 
-$$\text{Equity Value} = \text{EV} + \text{Cash \& Short-Term Investments} - \text{Total Debt}$$
+$$\text{Equity Value} = \text{EV} + \text{Cash and Short-Term Investments} - \text{Total Debt}$$
 
 $$\text{Implied Share Price} = \frac{\text{Equity Value}}{\text{Diluted Shares Outstanding}}$$
 
